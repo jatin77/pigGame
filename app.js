@@ -58,7 +58,7 @@ document.querySelector('#hold-dice').addEventListener('click', function() {
     document.querySelector(`.player-totalScore-${activePlayer}`).textContent =
       scores[activePlayer];
     //check if player win the game
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 50) {
       document.querySelector(`.player-name-${activePlayer}`).textContent =
         'Winner!';
       document.querySelector('.dice-img').style.display = 'none';
